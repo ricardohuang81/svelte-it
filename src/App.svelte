@@ -1,5 +1,11 @@
 <script>
+	import ContactCard from './ContactCard.svelte';
+
 	let name = 'Rico';
+	let jTitle = '';
+	let description = '';
+	// let image = 'https://www.alltalksnewsnetwork.com/wp-content/uploads/2018/11/Boruto_Artucle-900x500.jpg';
+	let image = '';
 	let age = 38;
 
 	$: uppercaseName = name.toUpperCase();
@@ -30,4 +36,15 @@
 <button on:click="{incrementAge}">Change Age</button>
 <!-- <button on:click="{changeName}">Change Name</button> -->
 <!-- <input type="text" value="{name}" on:input="{inputName}"> -->
+<input type="text" bind:value="{image}">
 <input type="text" bind:value="{name}">
+<input type="text" bind:value="{jTitle}">
+<textarea name="3" bind:value="{description}"></textarea>
+
+<ContactCard
+	userImg="{image}"
+	userName="{name}"
+	jobTitle="{jTitle}"
+	{description}
+	/>
+<!-- {description} is shortcut if variables in App and ContactCard are both "description" -->
