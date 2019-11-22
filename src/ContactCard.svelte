@@ -67,7 +67,7 @@
   <header>
     <!-- <div class="{userImg ? 'thumb' : 'thumb thumb-placeholder'}"> -->
     <div class="thumb" class:thumb-placeholder="{!userImg}">
-      <img src="{userImg}" alt="Boruto image">
+      <img src="{userImg}" alt="Some Image">
     </div>
     <div class="user-data">
       <h1>{userName}</h1>
