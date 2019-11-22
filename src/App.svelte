@@ -4,8 +4,8 @@
 	let name = 'Rico';
 	let jTitle = '';
 	let description = '';
-	// let image = 'https://www.alltalksnewsnetwork.com/wp-content/uploads/2018/11/Boruto_Artucle-900x500.jpg';
-	let image = '';
+	let image = 'https://www.alltalksnewsnetwork.com/wp-content/uploads/2018/11/Boruto_Artucle-900x500.jpg';
+	// let image = '';
 	let age = 38;
 
 	$: uppercaseName = name.toUpperCase();
