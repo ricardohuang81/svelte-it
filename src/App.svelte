@@ -39,7 +39,7 @@
 <input type="text" bind:value="{image}">
 <input type="text" bind:value="{name}">
 <input type="text" bind:value="{jTitle}">
-<textarea name="3" bind:value="{description}"></textarea>
+<textarea rows="3" bind:value="{description}"></textarea>
 
 <ContactCard
 	userImg="{image}"
